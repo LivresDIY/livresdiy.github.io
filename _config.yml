@@ -35,6 +35,6 @@ exclude:
 repository: LivresDIY/livresdiy.github.io
 
 # Header pages - specify which pages appear in navigation
-header_pages:
-  - index.html
+# header_pages:
+#   - index.html
 

@@ -12,10 +12,10 @@ Que temos como objetivo construir em conjunto soluções reais e compartilhar co
 
 Conheça algumas iniciativas que buscamos desenvolver em busca de um futuro com mais liberdade.
 
-• **Tecnologias descentralizadas**: desenvolvimento e uso do Bitcoin e criptografia aplicada;
-• **Self-hosting**: automação residencial, media center, e a criação de serviços próprios, como e-mail e "Google Docs" local;
-• **Privacidade e segurança**: aprendizado e aplicação de práticas para proteção de dados;
-• **Do It Yourself (DIY)**: impressão 3D, eletrônica e programação;
-• **Criação aberta**: projetos open source e open hardware.
+- **Tecnologias descentralizadas**: desenvolvimento e uso do Bitcoin e criptografia aplicada;
+- **Self-hosting**: automação residencial, media center, e a criação de serviços próprios, como e-mail e "Google Docs" local;
+- **Privacidade e segurança**: aprendizado e aplicação de práticas para proteção de dados;
+- **Do It Yourself (DIY)**: impressão 3D, eletrônica e programação;
+- **Criação aberta**: projetos open source e open hardware.
 
 [Faça parte da comunidade!](#join)
