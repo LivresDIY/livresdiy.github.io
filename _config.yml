@@ -1,26 +1,12 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
 title: Livres DIY
-email: contact@livresdiy.com
+email: contato@livres.diy
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Livres DIY - your destination for creative DIY book projects
   and crafting inspiration.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://livresdiy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://livres.diy" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: livresdiy
 github_username: LivresDIY
 
@@ -31,14 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Exclude from processing
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -55,17 +34,7 @@ exclude:
 # GitHub Pages specific settings
 repository: LivresDIY/livresdiy.github.io
 
-# Collections (if needed later)
-# collections:
-#   team:
-#     output: true
-#     permalink: /:collection/:name/
+# Header pages - specify which pages appear in navigation
+header_pages:
+  - index.html
 
-# Defaults (if needed later)
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       layout: "post"
-#       author: "Your Company"
