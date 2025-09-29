@@ -1,147 +1,203 @@
-# Company Website
+# Livres DIY - Website
 
-A Jekyll-based website for our company, designed to be deployed on GitHub Pages.
+Este é o repositório do website da comunidade **Livres DIY**, uma plataforma dedicada à criação de um ecossistema de liberdade digital através de tecnologias descentralizadas, privacidade e projetos DIY.
 
-## Quick Start
+## 📋 Informações Técnicas
 
-### Prerequisites
+### Tecnologias Utilizadas
+- **Jekyll** - Gerador de sites estáticos
+- **GitHub Pages** - Hospedagem gratuita
+- **Tema Minima** - Design limpo e responsivo
+- **Markdown** - Formatação de conteúdo
+- **SCSS** - Estilização avançada
 
-- Ruby (version 2.7 or higher)
-- Bundler gem
+### Estrutura do Projeto
+```
+livres-website/
+├── _config.yml          # Configurações do site
+├── _includes/           # Seções reutilizáveis
+│   ├── hero-section.md
+│   ├── middle-section.md
+│   └── bottom-section.md
+├── assets/
+│   └── main.scss        # Estilos customizados
+├── index.html           # Página principal
+├── Gemfile             # Dependências Ruby
+└── README.md           # Este arquivo
+```
+
+### Configuração Local
+
+#### Pré-requisitos
+- Ruby (versão 2.7 ou superior)
+- Bundler
 - Git
 
-### Local Development
+#### Instalação
+```bash
+# Clone o repositório
+git clone https://github.com/LivresDIY/livres-website.git
+cd livres-website
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/livres-website.git
-   cd livres-website
-   ```
+# Instale as dependências
+bundle install
 
-2. **Install dependencies:**
-   ```bash
-   bundle install
-   ```
+# Execute o servidor local
+bundle exec jekyll serve
 
-3. **Run the site locally:**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. **View the site:**
-   Open your browser and go to `http://localhost:4000`
-
-### Making Changes
-
-- **Edit content:** Modify the Markdown files (`.md`) in the root directory and subdirectories
-- **Update site settings:** Edit `_config.yml`
-- **Customize styling:** Modify files in the `_sass` directory (if created)
-- **Add new pages:** Create new Markdown files with appropriate front matter
-
-## Deployment to GitHub Pages
-
-This site uses GitHub Pages' **automatic Jekyll building** - no custom workflow needed!
-
-### Setup Steps:
-
-1. **Create a GitHub repository** named `livres-website` (or your preferred name)
-
-2. **Update configuration:**
-   - Edit `_config.yml` and update the following fields:
-     - `title`: Your company name
-     - `email`: Your contact email
-     - `description`: Your company description
-     - `url`: Your GitHub Pages URL (e.g., `https://yourusername.github.io`)
-     - `github_username`: Your GitHub username
-     - `twitter_username`: Your Twitter handle (optional)
-     - `repository`: Your repository name (e.g., `yourusername/livres-website`)
-
-3. **Push to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/livres-website.git
-   git push -u origin main
-   ```
-
-4. **Enable GitHub Pages:**
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Under "Source", select "Deploy from a branch"
-   - Choose "main" branch and "/ (root)" folder
-   - GitHub will automatically build and deploy your Jekyll site!
-
-5. **Access your site:**
-   Your site will be available at `https://yourusername.github.io/livres-website/`
-
-### Custom Domain (Optional)
-
-To use a custom domain:
-
-1. Add a `CNAME` file to the root directory with your domain name
-2. Configure your domain's DNS settings to point to GitHub Pages
-3. Update the `url` field in `_config.yml` to your custom domain
-
-## File Structure
-
-```
-├── _config.yml          # Site configuration
-├── _layouts/            # Page layouts
-│   └── default.html     # Default layout template
-├── _includes/           # Reusable components
-│   ├── head.html        # HTML head section
-│   ├── header.html      # Site header
-│   ├── footer.html      # Site footer
-│   └── social.html      # Social media links
-├── assets/
-│   └── main.scss        # Custom styling
-├── index.md             # Home page
-├── about.md             # About page
-├── contact.md           # Contact page
-├── Gemfile              # Ruby dependencies
-├── .gitignore           # Git ignore rules
-└── README.md            # This file
+# Acesse em: http://localhost:4000
 ```
 
-## Customization
+---
 
-### Adding New Pages
+## 🎨 Como Editar o Conteúdo (Para Não-Técnicos)
 
-Create a new Markdown file with front matter:
+Este site é dividido em **três seções principais** que você pode editar facilmente. Não se preocupe - você não precisa saber programação!
+
+### 📝 Onde Está o Conteúdo
+
+O conteúdo do site está dividido em 3 arquivos dentro da pasta `_includes/`:
+
+1. **`hero-section.md`** - Seção do topo (título principal)
+2. **`middle-section.md`** - Seção do meio (conteúdo principal)
+3. **`bottom-section.md`** - Seção inferior (call-to-action e links)
+
+### ✏️ Como Editar
+
+#### Opção 1: Editar Diretamente no GitHub (Mais Fácil)
+
+1. **Acesse o repositório**: Vá para https://github.com/LivresDIY/livres-website
+2. **Navegue até a pasta**: Clique em `_includes/`
+3. **Escolha o arquivo**: Clique no arquivo que deseja editar (ex: `hero-section.md`)
+4. **Clique no ícone do lápis** (✏️) no canto superior direito
+5. **Faça suas alterações** usando a formatação Markdown
+6. **Salve as mudanças**: Role para baixo, adicione uma descrição e clique em "Commit changes"
+
+**🎯 As mudanças aparecerão no site automaticamente em alguns minutos!**
+
+#### Opção 2: Usando um Editor de Texto Local
+
+1. **Baixe os arquivos**: Faça download do repositório como ZIP
+2. **Edite com qualquer editor**: Use Notepad, Word, ou qualquer editor de texto
+3. **Envie de volta**: Faça upload dos arquivos editados
+
+### 📖 Guia de Formatação Markdown
+
+O Markdown é uma linguagem simples para formatar texto. Aqui estão os comandos básicos:
 
 ```markdown
----
-layout: default
-title: Page Title
-permalink: /page-url/
----
+# Título Principal (H1)
+## Título Secundário (H2)
+### Título Terciário (H3)
 
-# Page Content
+**Texto em negrito**
+*Texto em itálico*
 
-Your page content goes here.
+• Lista com pontos
+• Outro item da lista
+
+[Texto do link](https://exemplo.com)
+
+---
+(Linha horizontal)
 ```
 
-### Styling
+### 🔗 Tutoriais Recomendados em Português
 
-This site uses the Minima theme. To customize:
+Para aprender mais sobre como editar e gerenciar conteúdo:
 
-1. Create a `_sass` directory
-2. Add custom SCSS files
-3. Import them in `assets/main.scss`
+1. **Markdown Básico**:
+   - [Guia Markdown em Português](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown)
+   - [Tutorial Markdown - DevMedia](https://www.devmedia.com.br/markdown-tutorial/33674)
 
-### Adding Blog Posts
+2. **Usando o GitHub**:
+   - [Como usar o GitHub - Tutorial Completo](https://www.hostinger.com.br/tutoriais/tutorial-do-git)
+   - [Editando arquivos no GitHub](https://docs.github.com/pt/repositories/working-with-files/managing-files/editing-files)
 
-1. Create a `_posts` directory
-2. Add posts with filename format: `YYYY-MM-DD-title.md`
-3. Include proper front matter with `layout: post`
+3. **Jekyll e Sites Estáticos**:
+   - [Jekyll em Português - Documentação](https://jekyllrb-pt.github.io/)
+   - [Criando sites com Jekyll](https://www.devmedia.com.br/criando-sites-estaticos-com-jekyll/32842)
 
-## Support
+---
 
-For Jekyll documentation, visit [https://jekyllrb.com/](https://jekyllrb.com/)
-For GitHub Pages documentation, visit [https://pages.github.com/](https://pages.github.com/)
+## 🎯 Exemplos Práticos de Edição
 
-## License
+### Alterando o Título Principal
+**Arquivo**: `_includes/hero-section.md`
 
-This project is open source and available under the [MIT License](LICENSE).
+```markdown
+# Seu Novo Título Aqui!
+
+Sua nova descrição da comunidade aqui.
+
+[Texto do botão](#link)
+```
+
+### Adicionando Nova Seção de Conteúdo
+**Arquivo**: `_includes/middle-section.md`
+
+```markdown
+## Novo Tópico
+
+Seu conteúdo aqui com **texto em negrito**.
+
+• Primeiro item da lista
+• Segundo item da lista
+• Terceiro item da lista
+
+[Link para mais informações](https://exemplo.com)
+```
+
+### Atualizando Links Sociais
+**Arquivo**: `_includes/bottom-section.md`
+
+```markdown
+<!-- Substitua os links pelos seus próprios -->
+[LinkedIn](https://linkedin.com/company/seuperfil) | [Discord](https://discord.gg/seuservidor)
+```
+
+---
+
+## ⚙️ Configurações do Site
+
+Para alterar informações básicas do site (título, descrição, etc.), edite o arquivo `_config.yml`:
+
+```yaml
+title: Livres DIY
+email: contato@livres.diy
+description: >-
+  Sua nova descrição aqui
+url: "https://livres.diy"
+twitter_username: seuperfil
+github_username: SeuUsuario
+```
+
+**⚠️ Importante**: Após alterar `_config.yml`, o site pode levar alguns minutos para atualizar.
+
+---
+
+## 🚀 Publicação e Deploy
+
+O site é automaticamente publicado no **GitHub Pages** sempre que você faz alterações na branch `main`. Não é necessário fazer nada extra - as mudanças aparecem automaticamente em alguns minutos!
+
+**URL do Site**: https://livres.diy
+
+---
+
+## 🆘 Precisa de Ajuda?
+
+Se você encontrar dificuldades ou tiver dúvidas:
+
+1. **Consulte os tutoriais** listados acima
+2. **Abra uma issue** no GitHub descrevendo seu problema
+3. **Entre em contato** através do email: contato@livres.diy
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença especificada no arquivo `LICENSE`.
+
+---
+
+**Feito com ❤️ pela comunidade Livres DIY**
