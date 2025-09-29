@@ -1,5 +1,5 @@
-# Construa o futuro que deseja viver. Seja Livres!
+# {{ site.data.content.hero.title }}
 
-Livres é uma comunidade autossoberana, autossustentável e colaborativa destinada a criadores e construtores que buscam construir um ecossistema de liberdade digital.
+{{ site.data.content.hero.subtitle }}
 
-[Conheça Livres](#about)
+[{{ site.data.content.hero.button_text }}]({{ site.data.content.hero.button_link }}){: .btn}

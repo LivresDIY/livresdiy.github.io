@@ -1,21 +1,17 @@
-## O paradoxo digital: conectados, mas vulneráveis.
+## {{ site.data.content.middle.title }}
 
-Vivemos o paradoxo digital: estamos conectados, mas vulneráveis; produtivos, mas dependentes; informados, mas desinformados. Nossos dados se tornaram um produto e as plataformas digitais passaram a controlar grande parte do que consumimos na internet.
+{{ site.data.content.middle.description }}
 
-Para mudar essa realidade, acreditamos que a solução está na autonomia e na soberania. Ou seja, precisamos, de fato, retomar a nossa liberdade de escolha.
+<div class="highlight">{{ site.data.content.middle.highlight }}</div>
 
-**A liberdade depende de nós!**
+{{ site.data.content.middle.intro }}
 
-Livres é uma comunidade prática e educativa. E o que isso quer dizer?
+<ul class="features-list">
+{% for feature in site.data.content.middle.features %}
+  <li><strong>{{ feature.title }}</strong><br>{{ feature.description }}</li>
+{% endfor %}
+</ul>
 
-Que temos como objetivo construir em conjunto soluções reais e compartilhar conhecimento.
-
-Conheça algumas iniciativas que buscamos desenvolver em busca de um futuro com mais liberdade.
-
-- **Tecnologias descentralizadas**: desenvolvimento e uso do Bitcoin e criptografia aplicada;
-- **Self-hosting**: automação residencial, media center, e a criação de serviços próprios, como e-mail e "Google Docs" local;
-- **Privacidade e segurança**: aprendizado e aplicação de práticas para proteção de dados;
-- **Do It Yourself (DIY)**: impressão 3D, eletrônica e programação;
-- **Criação aberta**: projetos open source e open hardware.
-
-[Faça parte da comunidade!](#join)
+<div class="cta-section">
+  <a href="{{ site.data.content.middle.cta_link }}" class="btn">{{ site.data.content.middle.cta_text }}</a>
+</div>

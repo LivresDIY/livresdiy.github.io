@@ -1,6 +1,318 @@
 ---
 ---
 
-@import "minima";
+/* Landing Page Styles - Custom Implementation */
 
-/* Custom styles for your website */
+/* CSS Reset and Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-light: #f8f9fa;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base HTML elements reset */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+/* Buttons - High specificity to override any theme styles */
+a.btn, .btn {
+  display: inline-block !important;
+  padding: 16px 32px !important;
+  background: var(--accent-color) !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: var(--shadow) !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin: 10px 5px !important;
+}
+
+a.btn:hover, .btn:hover, a.btn:visited:hover {
+  background: #c0392b !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a.btn:active, .btn:active {
+  transform: translateY(-1px) !important;
+}
+
+a.btn:visited {
+  color: white !important;
+  background: var(--accent-color) !important;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 80px 0;
+}
+
+.content-section:nth-child(even) {
+  background: var(--bg-light);
+}
+
+.content-section h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content-section .container {
+  max-width: 900px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Highlight box - High specificity */
+.content-section .highlight, div.highlight, .highlight {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: var(--accent-color) !important;
+  text-align: center !important;
+  margin: 2rem auto !important;
+  padding: 1.5rem !important;
+  background: rgba(231, 76, 60, 0.1) !important;
+  border-radius: 8px !important;
+  border-left: 4px solid var(--accent-color) !important;
+  max-width: 600px !important;
+  box-shadow: var(--shadow) !important;
+}
+
+/* Features List - Enhanced styling with high specificity */
+ul.features-list, .features-list {
+  list-style: none !important;
+  margin: 3rem 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  gap: 1.5rem !important;
+  grid-template-columns: 1fr !important;
+}
+
+ul.features-list li, .features-list li {
+  background: white !important;
+  padding: 1.5rem !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow) !important;
+  border-left: 4px solid var(--secondary-color) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+ul.features-list li:hover, .features-list li:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+ul.features-list li strong, .features-list li strong, ul.features-list strong, .features-list strong {
+  color: var(--primary-color) !important;
+  font-size: 1.1rem !important;
+  display: block !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 700 !important;
+}
+
+/* Ensure features list works on larger screens */
+@media (min-width: 768px) {
+  ul.features-list, .features-list {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  ul.features-list, .features-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-color);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+  
+  .content-section {
+    padding: 50px 0;
+  }
+  
+  .content-section h2 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .features-list li {
+    padding: 1rem;
+  }
+  
+  .social-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}

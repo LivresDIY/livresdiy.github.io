@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  
+  <!-- Jekyll SEO Tag -->
+  {% seo %}
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+</head>
+<body>
+  {{ content }}
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="{{ site.data.content.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.data.content.social.discord }}" target="_blank" rel="noopener">Discord</a>
+      </div>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Construindo liberdade digital.</p>
+    </div>
+  </footer>
+</body>
+</html>

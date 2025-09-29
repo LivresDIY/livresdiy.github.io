@@ -1,0 +1,65 @@
+# Content configuration for Livres landing page
+# Edit this file to change text, links, and key elements
+
+# Hero Section
+hero:
+  title: "Construa o futuro que deseja viver. Seja Livres!"
+  subtitle: "Livres é uma comunidade autossoberana, autossustentável e colaborativa destinada a criadores e construtores que buscam construir um ecossistema de liberdade digital."
+  button_text: "Conheça Livres"
+  button_link: "#about"
+
+# Middle Section (About/Features)
+middle:
+  title: "O paradoxo digital: conectados, mas vulneráveis."
+  description: |
+    Vivemos o paradoxo digital: estamos conectados, mas vulneráveis; produtivos, mas dependentes; informados, mas desinformados. Nossos dados se tornaram um produto e as plataformas digitais passaram a controlar grande parte do que consumimos na internet.
+
+    Para mudar essa realidade, acreditamos que a solução está na autonomia e na soberania. Ou seja, precisamos, de fato, retomar a nossa liberdade de escolha.
+  
+  highlight: "A liberdade depende de nós!"
+  
+  intro: |
+    Livres é uma comunidade prática e educativa. E o que isso quer dizer?
+
+    Que temos como objetivo construir em conjunto soluções reais e compartilhar conhecimento.
+
+    Conheça algumas iniciativas que buscamos desenvolver em busca de um futuro com mais liberdade.
+  
+  features:
+    - title: "Tecnologias descentralizadas"
+      description: "desenvolvimento e uso do Bitcoin e criptografia aplicada"
+    - title: "Self-hosting"
+      description: "automação residencial, media center, e a criação de serviços próprios, como e-mail e \"Google Docs\" local"
+    - title: "Privacidade e segurança"
+      description: "aprendizado e aplicação de práticas para proteção de dados"
+    - title: "Do It Yourself (DIY)"
+      description: "impressão 3D, eletrônica e programação"
+    - title: "Criação aberta"
+      description: "projetos open source e open hardware"
+  
+  cta_text: "Faça parte da comunidade!"
+  cta_link: "#join"
+
+# Bottom Section (Call to Action)
+bottom:
+  title: "O futuro é para quem constrói!"
+  description: |
+    Estamos em busca de mais pessoas que valorizam a liberdade, a privacidade e a colaboração mútua e que desejam construir um futuro mais livre e descentralizado.
+
+    Por isso, se você é desenvolvedor, designer, comunicador, empreendedor ou especialista das mais diversas áreas, seja muito bem vindo. Aqui é o seu lugar!
+
+    E então, pronto para ser parte da mudança?
+
+    Junte-se a nós e comece a construir o ecossistema de liberdade digital que você acredita.
+  
+  cta_text: "Seja Livres!"
+  cta_link: "#join"
+
+# Social Links
+social:
+  linkedin: "https://linkedin.com/company/livres"
+  discord: "https://discord.gg/livres"
+
+# Contact
+contact:
+  email: "contato@livres.diy"
